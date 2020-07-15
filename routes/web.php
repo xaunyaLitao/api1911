@@ -18,3 +18,4 @@ Route::get('/', function () {
 
 Route::get('hello','TestController@hello');
 Route::get('/wx/token','TestController@WXtoken');
+Route::get('/wx2/token','TestController@WXtoken2');
