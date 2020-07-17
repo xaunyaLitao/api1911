@@ -19,3 +19,13 @@ Route::get('/', function () {
 Route::get('test1','TestController@test1');
 Route::get('/info','TestController@info');
 
+// 注册
+Route::get('index/reg','Index\LoginController@reg');
+Route::post('index/regdo','Index\LoginController@regdo');
+
+
+//登录
+Route::get('index/login','Index\LoginController@login');
+
+Route::get('index/center','Index\LoginController@center');
+
