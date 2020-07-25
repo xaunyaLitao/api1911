@@ -12,6 +12,7 @@
 */
 
 Route::get('/', function () {
+
     return view('welcome');
 });
 
@@ -25,7 +26,29 @@ Route::post('index/regdo','Index\LoginController@regdo');
 
 
 //登录
-Route::get('index/login','Index\LoginController@login');
+Route::post('index/login','Index\LoginController@login');
 
-Route::get('index/center','Index\LoginController@center');
+Route::get('index/center','Index\LoginController@center')->middleware('accesstoken','all','user');
 
+
+// hash练习
+Route::get('test/hash','TestController@hash');
+Route::get('test/hash1','TestController@hash1');
+
+
+Route::get('/test2','TestController@test2');
+
+
+
+Route::get('/goods','TestController@goods')->middleware('verifycount');
+
+Route::get('/infos','TestController@infos')->middleware('viewcount');
+
+
+Route::get('/encr1','TestController@encr1');
+Route::get('/enc2','TestController@enc2');
+
+//签名
+Route::get('/sign','TestController@sign');
+
+Route::get('/test/sign2','TestController@sign2');
