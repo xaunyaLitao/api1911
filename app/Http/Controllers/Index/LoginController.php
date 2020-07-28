@@ -153,8 +153,5 @@ class LoginController extends Controller
 //         dd($token_all);
 
 
-
-         
-
      }
 }

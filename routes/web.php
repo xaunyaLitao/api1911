@@ -52,3 +52,13 @@ Route::get('/enc2','TestController@enc2');
 Route::get('/sign','TestController@sign');
 
 Route::get('/test/sign2','TestController@sign2');
+
+Route::get('/test/sign3','TestController@sign3');
+Route::get('/test/header1','TestController@header1');
+
+
+
+Route::get('/index/login','Login\LoginController@login');
+
+Route::get('/test/pay','TestController@testPay');
+Route::get('/pay','TestController@pay');

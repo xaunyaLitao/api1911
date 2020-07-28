@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>jquery</h1>
+</body>
+</html>
+<script src="/js/jquery.js"></script>
+<script>
+    $.ajax({
+        url:"/jquery.php",
+        type:'get',
+        dataType:'json',
+        success:function(res){
+        if(res){
+            alert("成功了");
+        }else{
+            alert("失败了");
+        }
+    }
+    });
+</script>
