@@ -207,7 +207,7 @@ class TestController extends Controller
         $param2 = [
             'out_trade_no'      => time().mt_rand(11111,99999),
             'product_code'      => 'FAST_INSTANT_TRADE_PAY',
-            'total_amount'      => 0.01,
+            'total_amount'      => 10000,
             'subject'           => '1911-测试订单-'.Str::random(16),
         ];
 

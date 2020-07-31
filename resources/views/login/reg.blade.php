@@ -262,7 +262,7 @@
                     <div class="cart-1">
                         <div class="row">
                             <div class="col s5">
-                                <img src="index/img/cart-menu1.png" alt="">
+                                <img src="img/cart-menu1.png" alt="">
                             </div>
                             <div class="col s7">
                                 <h5><a href="">Fashion Men's</a></h5>
@@ -297,7 +297,7 @@
                     <div class="cart-2">
                         <div class="row">
                             <div class="col s5">
-                                <img src="index/img/cart-menu2.png" alt="">
+                                <img src="img/cart-menu2.png" alt="">
                             </div>
                             <div class="col s7">
                                 <h5><a href="">Fashion Men's</a></h5>
@@ -363,29 +363,33 @@
 <!-- end cart menu -->
 
 
-<!-- login -->
+<!-- register -->
 <div class="pages section">
     <div class="container">
         <div class="pages-head">
-            <h3>LOGIN</h3>
+            <h3>REGISTER</h3>
         </div>
-        <div class="login">
+        <div class="register">
             <div class="row">
-                <form class="col s12" method="post" action="http://api.1911.com/logindo">
+                
+                <form class="col s12" method="post" action="http://api.1911.com/regdo">
                     <div class="input-field">
-                        <input type="text" class="validate" name="user_name" placeholder="USERNAME" required>
+                        <input type="text" class="validate" name="user_name" placeholder="NAME" required>
                     </div>
                     <div class="input-field">
-                        <input type="password" name="password" class="validate" placeholder="PASSWORD" required>
+                        <input type="email" placeholder="EMAIL" name="user_email" class="validate" required>
                     </div>
-                    <a href=""><h6>Forgot Password ?</h6></a>
-                    <button class="btn button-default">LOGIN</button>
+                    <div class="input-field">
+                        <input type="password" placeholder="PASSWORD" name="password" class="validate" required>
+                    </div>
+                    <button class="btn button-default">REGISTER</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<!-- end login -->
+<!-- end register -->
+
 
 <!-- loader -->
 <div id="fakeLoader"></div>

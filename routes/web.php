@@ -59,6 +59,8 @@ Route::get('/test/header1','TestController@header1');
 
 
 Route::get('/index/login','Login\LoginController@login');
+Route::get('/index/reg','Login\LoginController@reg');
+Route::get('/index/center','Login\LoginController@center');
 
 Route::get('/test/pay','TestController@testPay');
 Route::get('/pay','TestController@pay');
